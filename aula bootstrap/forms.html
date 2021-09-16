@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <script src="js/bootstrap.js"></script>
+
+    <title>forms</title>
+
+</head>
+
+<body>
+    <section>
+        <div class="container">
+
+            <!-- From com label -->
+            <div class="col-4">
+                <form>
+                    <div class="mb-3">
+                        <label class="form-label">Nome</label>
+                        <input value="Ricardo Mendes Cruz" disabled class="form-control" type="text" name="nome">
+                    </div>
+
+                    <div class="mb-3">
+                        <label class="form-label">E-mail</label>
+                        <input value="ricardo.mcruz119@gmail.com" readonly class="form-control" type="email"
+                            name="email">
+                    </div>
+
+                    <div class="mb-3">
+                        <label class="form-label">mensagem</label>
+                        <textarea name="msg" class="form-control"></textarea>
+                    </div>
+                </form>
+            </div>
+            <!-- Fim do form com label -->
+            
+            <br><br> <!-- USADO PARA SALTAR LINHAS -->
+            
+            
+            <!-- form com PLACEHOLDER -->
+            <div class="col-6">
+                <form>
+                    <div class="mb-3">
+                        <input type="text" class="form-control" placeholder="Nome" name="nome">
+                    </div>
+                    
+                    <div class="mb-3">
+                        <input type="email" class="form-control" placeholder="email" name="email">
+                    </div>
+                    
+                    <div class="mb-3">
+                        <textarea name="msg" class="form-control" placeholder="Mensagem" name="msg" ></textarea>
+                    </div>
+                    
+                </form>
+            </div>
+            <!-- Fim do form com PLACEHOLDER -->
+
+            <br><br>
+
+            <!-- Tela de login -->
+            <div class="col-8">
+                <form>
+                    <div class="mb-3">
+                        <label class="form-label">E-mail</label> <!-- perguntar pra que serve o form-label -->
+                        <input class="form-conrtol" type="email" name="email">
+                        <div class="form-text">Forneça um e-mail</div>
+                    </div>
+
+                    <div class="mb-3">
+                        <label class="form-label">Senha</label>
+                        <input type="password" class="form-control">
+                        
+                    </div>
+
+                    <div class="mb-3 form-check">
+                        <input type="checkbox" class="form-check-input">
+                        <label class="form-check-label">Lembrar-me</label>
+                    </div>
+                    <button type="submit" class="btn btn-success">Entrar</button>
+                </form>
+            </div>
+            <!-- Fim da tela de login -->
+        </div>
+            
+    </section>
+</body>
+
+</html>
